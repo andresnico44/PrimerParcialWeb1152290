@@ -161,6 +161,22 @@ button#searchButton:hover {
     opacity: 0.9;
 }
 
+/* Mensaje de éxito */
+.message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* Color del mensaje de éxito */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000; /* Asegura que esté en frente */
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .product-card {

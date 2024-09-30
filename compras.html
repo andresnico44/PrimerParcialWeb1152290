@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Online - Compras</title>
+    <title>Tienda Online</title>
     <link rel="stylesheet" href="stylesCompras.css">
 </head>
 <body>
     <header>
         <h1>Tienda Online</h1>
         <div class="header-icons">
-            <img src="carrito.png" alt="Carrito" id="cartIcon" title="Carrito">
-            <img src="logout.png" alt="Salir" id="logoutIcon" title="Cerrar sesión">
+            <img src="carrito.png" alt="Carrito" onclick="window.location.href='carrito.html'">
+            <img src="logout.png" alt="Salir" onclick="window.location.href='index.html'">
         </div>
     </header>
 
-    <section class="search-section">
-        <input type="text" id="searchField" placeholder="Filtro de búsqueda...">
+    <div class="search-section">
+        <input type="text" placeholder="Filtro de búsqueda...">
         <button id="searchButton">Buscar</button>
-    </section>
+    </div>
 
-    <nav class="categories-section">
-        <h2>Productos</h2>
+    <div class="categories-section">
+        <h2>Categorías</h2>
         <div id="categories">
-            <!-- Las categorías se agregarán dinámicamente aquí -->
+            <!-- Aquí se cargarán las categorías -->
         </div>
-    </nav>
+    </div>
 
-    <section class="products-section" id="productsSection">
-        <!-- Los productos se mostrarán aquí -->
-    </section>
+    <div class="products-section" id="products">
+        <!-- Aquí se cargarán los productos -->
+    </div>
 
-    <script src="scriptCompras.js"></script>
+    <script src="compras.js"></script>
 </body>
 </html>
