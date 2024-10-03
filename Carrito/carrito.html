@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="stylesCarrito.css">
+    <link rel="stylesheet" href="../Carrito/stylesCarrito.css">
 </head>
 <body>
     <header>
         <h1>Mi Carrito</h1>
         <div class="header-icons">
-            <img src="../img/logout.png" alt="Salir" id="logoutIcon" onclick="window.location.href= '../login/index.html'">
+            <img src="../img/logout.png" alt="Salir" id="logoutIcon" onclick="window.location.href='../login/index.html'">
         </div>
     </header>
+
+    <div class="customer-info">
+        <h2>Información del Cliente</h2>
+        <p id="customerName">Nombre: </p>
+        <p id="customerEmail">Email: </p>
+        <p id="customerPhone">Teléfono: </p>
+        <p id="customerAddress">Dirección: </p>
+    </div>
 
     <div class="cart-container">
         <h2>Productos en tu carrito</h2>
@@ -24,5 +32,7 @@
             <button id="checkoutButton">Realizar Pedido</button>
         </div>
     </div>
+
+    <script src="../Carrito/scriptCarrito.js"></script>
 </body>
 </html>
